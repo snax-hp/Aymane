@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شحن جواهر فري فاير</title>
+    <style>
+        /* تحسين التناسق العام */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #a1c4fd, #6a82fb);
+            text-align: center;
+            direction: rtl;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* منع العناصر من الخروج */
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            display: block;
+            text-align: right;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        .charge-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff8000;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .charge-button:hover {
+            background-color: #e67e00;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://f.top4top.io/p_3353ktirk0.png" alt="شحن جواهر فري فاير" class="header-image">
+
+        <label for="country">🌍 من أي دولة أنت؟</label>
+        <select id="country">
+            <option value="sa">🇸🇦 السعودية</option>
+            <option value="eg">🇪🇬 مصر</option>
+            <option value="ae">🇦🇪 الإمارات</option>
+            <option value="kw">🇰🇼 الكويت</option>
+            <option value="qa">🇶🇦 قطر</option>
+            <option value="bh">🇧🇭 البحرين</option>
+            <option value="om">🇴🇲 عمان</option>
+            <option value="jo">🇯🇴 الأردن</option>
+            <option value="lb">🇱🇧 لبنان</option>
+            <option value="sy">🇸🇾 سوريا</option>
+            <option value="iq">🇮🇶 العراق</option>
+            <option value="ma">🇲🇦 المغرب</option>
+            <option value="dz">🇩🇿 الجزائر</option>
+            <option value="tn">🇹🇳 تونس</option>
+            <option value="ly">🇱🇾 ليبيا</option>
+            <option value="ps">🇵🇸 فلسطين</option>
+            <option value="sd">🇸🇩 السودان</option>
+            <option value="ye">🇾🇪 اليمن</option>
+        </select>
+
+        <label for="start-year">📅 متى بدأت لعب فري فاير؟</label>
+        <select id="start-year">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+
+        <label for="id">🆔 أدخل ID حسابك</label>
+        <input type="text" id="id" placeholder="أدخل ID الخاص بك هنا" />
+
+        <label for="gems">💎 اختر عدد الجواهر</label>
+        <select id="gems">
+            <option value="100">💎 100</option>
+            <option value="1000">💎 1000</option>
+        </select>
+
+        <a id="charge-link" href="https://dolarit-php.blogspot.com/2025/03/blog-post_21.html" class="charge-button">⚡ شحن الجواهر الآن ⚡</a>
+    </div>
+
+    <script>
+        document.getElementById("charge-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            const userId = document.getElementById("id").value;
+            const gemsAmount = document.getElementById("gems").value;
+
+            if (!userId) {
+                alert("يرجى إدخال ID الحساب قبل الشحن.");
+                return;
+            }
+
+            const redirectUrl = `https://dolarit-php.blogspot.com/2025/03/blog-post_21.html?id=${userId}&gems=${gemsAmount}`;
+            window.location.href = redirectUrl;
+        });
+    </script>
+
+</body>
+</html>
